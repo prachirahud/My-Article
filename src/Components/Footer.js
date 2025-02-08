@@ -14,8 +14,8 @@ const Footer = () => {
         <div className="footer-nav">
           <a href="/">Home</a>
           <a href="/blogs">Blogs</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
+          <a href="/aboutus">About-us</a>
+          <a href="/contactus">Contact-us</a>
         </div>
         {/* Right - Social Media Icons */}
         <div className="footer-social">

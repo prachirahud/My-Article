@@ -16,6 +16,11 @@ import { Toaster } from 'react-hot-toast';
 import BlogDetail from './Pages/BlogDetails.js';
 import Baner from './Pages/Baner.js';
 import Footer from './Components/Footer.js';
+import Mission from './Pages/mission.js';
+import WhatWeCover from './Pages/whatWeCover.js';
+import WhyDevOps from './Pages/whyDevops.js';
+import './Styles/tailwind.css';
+import './Styles/output.css';
 
 
 export default function App() {
@@ -34,12 +39,12 @@ export default function App() {
         <Route path="/:id" element={<BlogDetail />} />
         <Route path="/contactus" element={<Contactus />} /> {/* Lowercase path for consistency */}
         <Route path="/Aboutus" element={<Aboutus/>} />
+        <Route path="/aboutus/mission" element={<Mission />} />
+        <Route path="/aboutus/what-we-cover" element={<WhatWeCover />} />
+        <Route path="/aboutus/why-devops" element={<WhyDevOps />} />
         <Route path="/Login" element={<Login/>} />
         <Route path="/Register" element={<Register/>} />
         <Route path="/Logout" element={<Logout/>} />
-        {/* <Route path="/article/:id" element={<ArticleDetail />} />
-        <Route path="/new-article" element={<NewArticle />} /> */}
-        {/* Optional 404 Page */}
         <Route path="*" element={<div>Page not found</div>} />
       </Routes>
       <Footer/>
