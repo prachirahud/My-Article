@@ -8,6 +8,7 @@
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "npm start --prefix ./frontend",
+     "build": "echo 'No build step needed' ",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
